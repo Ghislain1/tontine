@@ -1,0 +1,28 @@
+/* Variables*/
+$primary: #4CAF50;
+$bg-color: #111;
+
+ul {
+  list-style-type: none;
+  background-color: $bg-color;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+
+  li {
+    display: inline;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: white;
+
+  }
+
+  a {
+    padding: 14px 16px;
+    display: inline;
+    text-decoration: none;
+    color: white;
+
+  }
+}
