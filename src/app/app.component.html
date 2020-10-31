@@ -1,1 +1,12 @@
  <app-top-navi></app-top-navi>
+
+
+ <div *ngIf="!ready">
+   <div class="text"> loading ({{ percentage }}%)</div>
+ </div>
+
+ <div>
+   <div [@routeAnimation]="prepRouteAnimation(outlet)">
+     <router-outlet #outlet="outlet"></router-outlet>
+   </div>
+ </div>
