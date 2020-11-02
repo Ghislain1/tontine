@@ -1,20 +1,21 @@
 <h1>Login</h1>
 
+<div class="loginLayout">
+  <div class="p-fluid p-formgrid p-grid">
+    <div class="p-field p-col">
+      <label for="username">Username</label>
+      <input id="username" type="text" pInputText>
+    </div>
 
-<div class="p-fluid p-formgrid p-grid">
-  <div class="p-field p-col">
-    <label for="username">Username</label>
-    <input id="username" type="text" pInputText>
+    <div class="p-field p-col">
+      <label for="password">Password</label>
+      <input pPassword id="password" type="text" pInputText>
+    </div>
   </div>
 
-  <div class="p-field p-col">
-    <label for="password">Password</label>
-    <input pPassword id="password" type="text" pInputText>
-  </div>
-</div>
-
-<div class="p-fluid p-formgrid p-grid">
-  <div class="p-field p-col">
-    <button routerLink="/signup" pButton type="button" label="Create an account" class="p-button-link"></button>
+  <div class="p-fluid p-formgrid p-grid">
+    <div class="p-field p-col">
+      <button routerLink="/signup" pButton type="button" label="Create an account" class="p-button-link"></button>
+    </div>
   </div>
 </div>
