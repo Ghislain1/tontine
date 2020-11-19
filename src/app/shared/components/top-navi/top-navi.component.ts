@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+
 
 @Component({
   selector: 'app-top-navi',
@@ -9,8 +9,8 @@ import { MenuItem } from 'primeng/api';
 export class TopNaviComponent implements OnInit {
 
   // Properties
-  items: MenuItem[];
-  activeItem: MenuItem;
+  items: any[];
+  activeItem: any;
 
   constructor() { }
 

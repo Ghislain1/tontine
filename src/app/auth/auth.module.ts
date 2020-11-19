@@ -3,9 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { RouterModule, Routes } from '@angular/router';
-import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
-import { PasswordModule } from 'primeng/password';
+
 import { FormsModule } from '@angular/forms';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
@@ -27,10 +25,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     FormsModule,
-    InputTextModule,
-    ButtonModule,
-    PasswordModule,
-    ButtonModule,
+
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFireStorageModule,

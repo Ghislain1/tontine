@@ -3,9 +3,7 @@ import { CommonModule } from '@angular/common';
 import { TopNaviComponent } from './components/top-navi/top-navi.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
-import { MenubarModule } from 'primeng/menubar';
-import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
+import { IconsModule, NavbarModule, WavesModule } from 'angular-bootstrap-md';
 
 
 @NgModule({
@@ -14,9 +12,9 @@ import { ButtonModule } from 'primeng/button';
     FooterComponent],
   imports: [
     CommonModule,
-    MenubarModule, // Due to Tab
-    InputTextModule,
-    ButtonModule,
+    NavbarModule,
+    WavesModule,
+    IconsModule,
     RouterModule // Due to routerLInk in HTML
 
   ],

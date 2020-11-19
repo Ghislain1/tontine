@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { DropdownModule, IconsModule, MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -17,6 +18,9 @@ import { AuthModule } from './auth/auth.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MDBBootstrapModule.forRoot(), // Bootstrap
+    DropdownModule.forRoot(),
+
     AuthModule, // Due to signIn, and UP
     AppRoutingModule,
     SharedModule, // for navigation

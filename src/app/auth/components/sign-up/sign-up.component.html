@@ -1,38 +1,37 @@
- 
-  <h1> Sign Up !!</h1>
+ <h1> Sign Up !!</h1>
 
-  <form (ngSubmit)="onSubmit()" class="p-fluid p-formgrid p-grid">
-    <div class="p-field p-col">
+ <form (ngSubmit)="onSubmit()" class="p-fluid p-formgrid p-grid">
+   <div class="p-field p-col">
 
-      <div class="p-inputgroup">
-        <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
-        <input name="firstName" [(ngModel)]="model.firstName" type="text" pInputText placeholder="First Name">
-      </div>
+     <div class="p-inputgroup">
+       <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+       <input name="firstName" [(ngModel)]="model.firstName" type="text" placeholder="First Name">
+     </div>
 
-      <div class="p-inputgroup p-md-4">
-        <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
-        <input   #lastName name="lastName"  [(ngModel)]="model.lastName" type="text" pInputText placeholder="Last Name">
-      </div>
+     <div class="p-inputgroup p-md-4">
+       <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+       <input #lastName name="lastName" [(ngModel)]="model.lastName" type="text" placeholder="Last Name">
+     </div>
 
-      <div class="p-inputgroup p-md-4">
-        <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
-        <input #userName name="userName" [(ngModel)]="model.userName" type="text" pInputText placeholder="User Name">
-      </div>
+     <div class="p-inputgroup p-md-4">
+       <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+       <input #userName name="userName" [(ngModel)]="model.userName" type="text" placeholder="User Name">
+     </div>
 
-      <div class="p-inputgroup">
-        <span class="p-inputgroup-addon"><i class="pi pi-unlock"></i></span>
-        <input name="password" [(ngModel)]="model.password" type="password" pPassword placeholder="Password">
-      </div>
+     <div class="p-inputgroup">
+       <span class="p-inputgroup-addon"><i class="pi pi-unlock"></i></span>
+       <input name="password" [(ngModel)]="model.password" type="password" pPassword placeholder="Password">
+     </div>
 
-      <div class="p-col-12 p-md-4">
-        <div class="p-inputgroup">
-          <button pButton type="submit" label="Register" class="p-button-raised p-button-rounded"></button>
-          <button pButton type="button" label="Cancel" class="p-button-raised p-button-rounded"></button>
-        </div>
-      </div>
+     <div class="p-col-12 p-md-4">
+       <div class="p-inputgroup">
+         <button pButton type="submit" label="Register" class="p-button-raised p-button-rounded"></button>
+         <button pButton type="button" label="Cancel" class="p-button-raised p-button-rounded"></button>
+       </div>
+     </div>
 
-    </div>
+   </div>
 
-  </form>
+ </form>
 
-  {{message}}
+ {{message}}
