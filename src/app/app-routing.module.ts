@@ -5,7 +5,7 @@ import { AuthGuard } from './auth/guards/auth.guard';
 const routes: Routes = [
   {
     path: 'tontinards',
-    canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
     loadChildren: () => import('./tontinard/tontinard.module').then(m => m.TontinardModule)
 
   },

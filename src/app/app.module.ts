@@ -20,7 +20,6 @@ import { AuthModule } from './auth/auth.module';
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(), // Bootstrap
     DropdownModule.forRoot(),
-
     AuthModule, // Due to signIn, and UP
     AppRoutingModule,
     SharedModule, // for navigation

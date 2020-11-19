@@ -1,56 +1,53 @@
-:host {
-  display: block;
+html,
+body,
+header,
+.view {
+  height: 100%;
 }
 
-.resources>.cell {
-  display: inline-block;
-  width: calc(33% + 3px);
-  position: relative;
-  margin-left: -3px;
-  overflow: hidden;
-  height: 100vh;
-  text-align: center;
-  padding: 20px;
-  vertical-align: top;
-  font-size: 1.5rem;
+@media (max-width: 740px) {
 
-  .avatar {
-    position: absolute;
-    height: 120%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
   }
+}
 
-  .heading {
-    text-transform: uppercase;
-    color: white;
+@media (min-width: 800px) and (max-width: 850px) {
+
+  html,
+  body,
+  header,
+  .view {
+    height: 650px;
   }
+}
 
-  .content {
-    background: #111;
-    padding: 1em;
-    position: absolute;
-    width: 500px;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-
-    .item {
-      line-height: 100%;
-      font-size: 2rem;
-
-      a {
-
-        &,
-        &:link,
-        &:active,
-        &:visited,
-        &:hover {
-          color: white;
-          text-decoration: underline;
-        }
-      }
-    }
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #1C2331 !important;
   }
+}
+
+/* Navbar animation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.top-nav-collapse {
+  background-color: #1C2331;
+}
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331;
+  }
+}
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #1C2331;
 }
