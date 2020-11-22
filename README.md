@@ -1,3 +1,5 @@
+[Live wep](https://tontinard-5d88e.web.app/) - Cloud firebase, Hosting from firebase are used
+
 # NPM Commands/Scripts
 1. **npm install** to install dependencies
 1. **npm outdated** to verify dependencies
