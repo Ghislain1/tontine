@@ -23,6 +23,16 @@
 1. Setup Router Service for Navigating
 1. Create Firebase Authentication Service using Firebase API
 
+## ** Cloud FireStore in Angular **
+1. Create Firebase App called tontinard --> FireBase project 
+1. Setup a **FireStore** --> New database system(NoSQL) to store data
+1. Test Modul selektieren --> 30 Days life
+1. Create Schema in DB --> Table, Data structure like in Model named tontinards 
+1. Create Table with field ---> Prperties der Model and type (firstname, lastname, username)
+1. Install @angular/fire --> Interact your app with firebase
+1. Install  firebase --> Api for  firebase
+1. Updated environment filw with confif from firebase --> firebaseConfig ?
+
 ## **Deploying an Angular App** to Firebase Hosting
 1. Build your Angular app for production with ng build --prod
 1. Create a Firebase account & project

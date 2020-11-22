@@ -11,6 +11,10 @@ import { LandingModule } from './landing/landing.module';
 import { CoreModule } from './core/core.module';
 import { AuthModule } from './auth/auth.module';
 
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment.prod';
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -24,7 +28,9 @@ import { AuthModule } from './auth/auth.module';
     AppRoutingModule,
     SharedModule, // for navigation
     LandingModule,
-    CoreModule, // for About, contact
+    CoreModule, // for About, contact,
+    AngularFireModule.initializeApp(
+      environment.production ? environment.firebaseConfig : environment.firebaseConfig), // for Cloud FireStore to  Console App
   ],
   providers: [],
   bootstrap: [AppComponent]

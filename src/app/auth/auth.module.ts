@@ -30,7 +30,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     FormsModule,
-    AngularFireModule.initializeApp(environment.firebase),
+
     AngularFireAuthModule,
     AngularFireStorageModule,
     AngularFirestoreModule,

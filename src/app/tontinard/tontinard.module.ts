@@ -5,12 +5,17 @@ import { UserListComponent } from './components/user-list/user-list.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
 
 
+// ROUTER For Tontinards
 const routes: Routes = [
   { path: '', component: UserListComponent },
   { path: ':id', component: UserDetailsComponent },
 ];
+
+
 @NgModule({
-  declarations: [],
+  declarations: [
+    UserListComponent,
+    UserDetailsComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)

@@ -4,15 +4,15 @@
 
 export const environment = {
   production: false,
-  firebase: {
-    apiKey: 'AIzaSyCjWDylbMdMIStTIWWSFaE-xqksbL7Z5wI',
-    authDomain: 'tontine-6540a.firebaseapp.com',
-    databaseURL: 'https://tontine-6540a.firebaseio.com',
-    projectId: 'tontine-6540a',
-    storageBucket: 'tontine-6540a.appspot.com',
-    messagingSenderId: '441869192792',
-    appId: '1:441869192792:web:71488ff3a3b0f48b30842d',
-    measurementId: 'G-5Q1JLQD49X'
+  firebaseConfig: {
+    apiKey: 'AIzaSyDKsTzeIPp-hrg4DtqK0eHco4JqtIB1Rek',
+    authDomain: 'tontinard-5d88e.firebaseapp.com',
+    databaseURL: 'https://tontinard-5d88e.firebaseio.com',
+    projectId: 'tontinard-5d88e',
+    storageBucket: 'tontinard-5d88e.appspot.com',
+    messagingSenderId: '934985366470',
+    appId: '1:934985366470:web:8d5cd778fc7aa3fe3e90c7',
+    measurementId: 'G-L5HE0HH84R'
   }
 };
 
