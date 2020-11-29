@@ -1,68 +1,73 @@
- <!--Navbar-->
- <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color" [containerInside]="false">
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/Ghislain1/tontine" class="d-none d-sm-block">
+  <img style="position: absolute; -webkit-transform:rotate(-90deg); top: 0; left: 0; border: 0; z-index: 2000;"
+    src="https://api.ganatan.com/articles/img/forkme.png" alt="Fork me on GitHub"
+    data-canonical-src="https://api.ganatan.com/articles/img/forkme.png" />
+</a>
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color" [containerInside]="false">
 
-   <!-- Navbar brand -->
-   <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand>
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand>
 
-   <!-- Collapsible content -->
-   <links>
+  <!-- Collapsible content -->
+  <links>
 
-     <!-- Links -->
-     <ul class="navbar-nav mr-auto">
-       <li class="nav-item active">
-         <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link waves-light" routerLink="/tontinards" mdbWavesEffect>Tontinard</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
-       </li>
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="/tontinards" mdbWavesEffect>Tontinard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
+      </li>
 
-       <!-- Dropdown -->
-       <li class="nav-item dropdown" dropdown>
-         <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-           Basic dropdown<span class="caret"></span></a>
-         <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-           <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
-           <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
-           <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
-           <div class="divider dropdown-divider"></div>
-           <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
-         </div>
-       </li>
+      <!-- Dropdown -->
+      <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          Basic dropdown<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+          <div class="divider dropdown-divider"></div>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+        </div>
+      </li>
 
-     </ul>
-     <!-- Links -->
+    </ul>
 
-     <ul class="navbar-nav ml-auto nav-flex-icons">
-       <li class="nav-item">
-         <a routerLink="signin" class="nav-link">
-           <mdb-icon fas icon="sign-out-alt"></mdb-icon>
-         </a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link">
-           <mdb-icon fas icon="wrench"></mdb-icon>
-         </a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link">
-           <div class="btn-group" mdbDropdown>
-             <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
-             <div class="dropdown-menu dropdown-menu-right dropdown-primary">
-               <a class="dropdown-item" href="#">Action</a>
-               <a class="dropdown-item" href="#">Another action</a>
-               <a class="dropdown-item" href="#">Something else here</a>
-               <div class="divider dropdown-divider"></div>
-               <a class="dropdown-item" href="#">Separated link</a>
-             </div>
-           </div>
-         </a>
-       </li>
-     </ul>
-   </links>
-   <!-- Collapsible content -->
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a routerLink="signin" class="nav-link">
+          <mdb-icon fas icon="sign-out-alt"></mdb-icon>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <mdb-icon fas icon="wrench"></mdb-icon>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <div class="btn-group" mdbDropdown>
+            <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
+            <div class="dropdown-menu dropdown-menu-right dropdown-primary">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="divider dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </links>
+  <!-- Collapsible content -->
 
- </mdb-navbar>
- <!--/.Navbar-->
+</mdb-navbar>
+<!--/.Navbar-->
