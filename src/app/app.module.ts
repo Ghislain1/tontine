@@ -24,10 +24,8 @@ import { environment } from 'src/environments/environment.prod';
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(), // Bootstrap
     DropdownModule.forRoot(),
-    AuthModule, // Due to signIn, and UP
     AppRoutingModule,
-    SharedModule, // for navigation
-    LandingModule,
+    SharedModule, // To Display Header
     CoreModule, // for About, contact,
     AngularFireModule.initializeApp(
       environment.production ? environment.firebaseConfig : environment.firebaseConfig), // for Cloud FireStore to  Console App

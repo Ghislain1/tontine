@@ -1,15 +1,26 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AuthGuard } from './auth/guards/auth.guard';
+
 
 const routes: Routes = [
   {
     path: 'tontinards',
     // canActivate: [AuthGuard],
     loadChildren: () => import('./tontinard/tontinard.module').then(m => m.TontinardModule)
-
   },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  {
+    path: 'signin',
+    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./landing/landing.module').then(m => m.LandingModule)
+  },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  }
 
 ];
 
