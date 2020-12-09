@@ -43,3 +43,14 @@
 1. Initialize your project --> firebase init and **understand all features**
 1. Deploy to Firebase Hosting --> firebase deploy
 1. Launch it straight from the command --> firebase open
+
+# Agenda
+1. Init Angular project
+1. Install package hammerjs
+1. Install package angular-bootstrap-md
+1. Install package chart.js
+1. Install package @fortawesome/fontawesome-free 
+1. Install  @angular/cdk 
+1. Install animate.css: 
+1. Update **styles arrays** in angular.json file [why](https://mdbootstrap.com/docs/angular/getting-started/quick-start/)
+1. Update **scripts arrays** in angular.json file
