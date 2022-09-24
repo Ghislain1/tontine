@@ -9,7 +9,7 @@ import { RouterModule } from '@angular/router';
     TopNaviComponent,
     FooterComponent],
   imports: [
-    CommonModule
+    CommonModule,
     RouterModule // Due to routerLInk in HTML
 
   ],
