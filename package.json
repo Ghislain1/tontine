@@ -1,4 +1,5 @@
-{  "name": "angular-starter",
+{
+  "name": "tontine",
   "version": "14.2.3",
   "scripts": {
     "ng": "ng",
