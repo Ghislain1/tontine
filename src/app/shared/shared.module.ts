@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { TopNaviComponent } from './components/top-navi/top-navi.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
-import { ButtonsModule, IconsModule, NavbarModule, WavesModule } from 'angular-bootstrap-md';
+
 
 
 @NgModule({
@@ -11,11 +11,7 @@ import { ButtonsModule, IconsModule, NavbarModule, WavesModule } from 'angular-b
     TopNaviComponent,
     FooterComponent],
   imports: [
-    CommonModule,
-    NavbarModule,
-    WavesModule,
-    IconsModule,
-    ButtonsModule,
+    CommonModule
 
     RouterModule // Due to routerLInk in HTML
 
