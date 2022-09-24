@@ -4,15 +4,12 @@ import { TopNaviComponent } from './components/top-navi/top-navi.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 
-
-
 @NgModule({
   declarations: [
     TopNaviComponent,
     FooterComponent],
   imports: [
     CommonModule
-
     RouterModule // Due to routerLInk in HTML
 
   ],
