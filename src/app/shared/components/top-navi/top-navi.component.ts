@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class TopNaviComponent implements OnInit {
 
   // Properties
-  items: any[];
+  items: any = [];
   activeItem: any;
 
   constructor() { }
