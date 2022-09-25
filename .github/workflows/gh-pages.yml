@@ -28,7 +28,7 @@ jobs:
         if: success()
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: docs
+          branch: main
           folder: docs
           target-folder: docs #  To push the contents of the deployment
           commit-message: "Contents Of Deployement is done  ${{github.event.head_commit.message}}
