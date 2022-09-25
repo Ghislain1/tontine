@@ -34,6 +34,11 @@ jobs:
       - name: Build
         run: npm run build:prod
 
+      - name: Upload artifact(Action to Update artifact)
+        uses: actions/deploy-pages@v1
+        with:
+          name: github-pages
+
       - name: Deploy(This action is used to deploy Actions artifacts to GitHub Pages.)
         # if: success()
         id: deployment
