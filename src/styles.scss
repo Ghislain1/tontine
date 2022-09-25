@@ -1,3 +1,11 @@
 // base on https://mdbootstrap.com/docs/standard/getting-started/installation/#section-npm
 // Import MDB stylesheet
-@import '~mdb-ui-kit/css/mdb.min.css';
+//@import '~mdb-ui-kit/css/mdb.min.css';
+// MDB SCSS
+@import "~mdb-angular-ui-kit/assets/scss/mdb.scss";
+// npm i @fortawesome/fontawesome-free
+// Font Awesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
