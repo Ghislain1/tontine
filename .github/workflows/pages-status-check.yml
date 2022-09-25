@@ -1,6 +1,9 @@
 name: Check Pages Status
 
-on: page_build
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   pages-status-check:
