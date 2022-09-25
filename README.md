@@ -15,3 +15,9 @@
 1. [TypeScript based on Theory](https://mdbootstrap.com/education/angular/typescript-1-fundamentals/)
 1. [Quick start](https://mdbootstrap.com/docs/angular/getting-started/quick-start/) using MD for B
 
+# Material Design for Bootstrap
+1. Install MDB CLI ==>
+1. Log in ===>  ZeusV#1
+1. Publish your project to the internet ==>
+1. Add git repository to your project ==> [Read](https://mdbgo.com/docs/getting-started/overview/#git)
+

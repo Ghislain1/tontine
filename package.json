@@ -4,13 +4,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4200",
-    "build": "ng build",
+    "build": "ng build np --verbose true",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "coverage": "ng test --no-watch --code-coverage",
     "serve": "node server",
     "lint": "ng lint",
     "build:prod": "ng build --configuration production --output-path docs --base-href https://ghislain1.github.io/tontine/ --verbose true",
+    "build:prod2": "ng build --configuration production --output-path docs --base-href ./ --verbose true",
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless"
   },
   "private": true,
