@@ -11,7 +11,7 @@
     "create-github-pages": "npm run deploy && npm run copy-index",
     "coverage": "ng test --no-watch --code-coverage",
     "serve": "node server",
-    "dev": "git add * && git commit -m Updating  && git push",
+    "dev": "git add * && git commit -m Updating...  && git push",
     "lint": "ng lint",
     "build:prod": "ng build --configuration production --output-path docs --base-href https://ghislain1.github.io/tontine/ --verbose true",
     "build:prod2": "ng build --configuration production --output-path docs --base-href ./ --verbose true",
