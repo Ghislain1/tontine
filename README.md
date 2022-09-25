@@ -20,4 +20,5 @@
 1. Log in ===>  ZeusV#1
 1. Publish your project to the internet ==>
 1. Add git repository to your project ==> [Read](https://mdbgo.com/docs/getting-started/overview/#git)
-
+# My Findings (errors, warnings...)
+1. __Error Could not publish__: The "path" argument must be of type string. Received undefined
