@@ -63,7 +63,4 @@ export class AppComponent {
     });
   }
 
-  prepRouteAnimation(outlet: RouterOutlet): any {
-    return outlet.activatedRouteData.animation || '';
-  }
 }

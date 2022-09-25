@@ -7,19 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignUpComponent implements OnInit {
 
-  model;
-  message;
+
   submitted = false;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.model = { id: 1000 };
+
   }
 
   onSubmit(): void {
     this.submitted = true;
-    this.message = JSON.stringify(this.model);
+
   }
 
 }
