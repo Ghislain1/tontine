@@ -38,5 +38,3 @@ jobs:
         if: success()
         uses: actions/deploy-pages@v1
         id: deployment
-        with:
-          commit-message: "Contents Of Deployement is done  ${{github.event.head_commit.message}}"
