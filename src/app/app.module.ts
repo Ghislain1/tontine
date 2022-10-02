@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 
 import { environment } from 'src/environments/environment.prod';
+import { AuthModule } from './auth/auth.module';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { environment } from 'src/environments/environment.prod';
     AppRoutingModule,
     SharedModule, // To Display Header
     CoreModule, // for About, contact,
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

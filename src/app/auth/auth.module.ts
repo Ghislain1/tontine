@@ -26,8 +26,9 @@ const routes: Routes = [
     VerifyEmailComponent],
   imports: [
     CommonModule,
-    FormsModule,
+    //FormsModule,
     RouterModule.forChild(routes)
-  ]
+  ],
+  exports: [SignInComponent, SignUpComponent]
 })
 export class AuthModule { }

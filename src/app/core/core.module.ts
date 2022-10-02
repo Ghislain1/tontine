@@ -10,17 +10,9 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
 ];
 
-
 @NgModule({
-  declarations: [
-    ContactComponent,
-    AboutComponent],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes)
-  ],
-  exports: [
-    ContactComponent,
-    AboutComponent],
+  declarations: [ContactComponent, AboutComponent],
+  imports: [CommonModule, RouterModule.forChild(routes)],
+  exports: [ContactComponent, AboutComponent],
 })
 export class CoreModule { }
