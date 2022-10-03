@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignInComponent implements OnInit {
 
+  IsNickNameEmpty: boolean = true;
   constructor() { }
 
   ngOnInit(): void {

@@ -1,19 +1,42 @@
 import { Injectable, NgZone } from '@angular/core';
 import { Router } from '@angular/router';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+
+const AUTH_API = 'http://localhost:8080/api/auth/';
+const httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+};
+
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
-
-
   isLoggedIn = false;
 
   constructor(
+    private httpClient: HttpClient,
     public router: Router,
     public ngZone: NgZone // NgZone service to remove outside scope warning
   ) {
 
+  }
+
+  login(username: string, password: string): Observable<any> {
+    return this.httpClient.post(AUTH_API + 'signin', {
+      username,
+      password
+    }, httpOptions);
+  }
+
+  register(username: string, email: string, password: string): Observable<any> {
+    return this.httpClient.post(AUTH_API + 'signup', {
+      username,
+      email,
+      password
+    }, httpOptions);
   }
 
 
@@ -56,9 +79,6 @@ export class AuthService {
 
   }
 
-  login() {
-
-  }
 
   logout(): void {
 

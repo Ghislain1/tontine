@@ -26,7 +26,7 @@ const routes: Routes = [
     VerifyEmailComponent],
   imports: [
     CommonModule,
-    //FormsModule,
+    FormsModule, // for usage of [(ngModel)]
     RouterModule.forChild(routes)
   ],
   exports: [SignInComponent, SignUpComponent]

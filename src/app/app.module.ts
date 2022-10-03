@@ -9,6 +9,7 @@ import { CoreModule } from './core/core.module';
 
 import { environment } from 'src/environments/environment.prod';
 import { AuthModule } from './auth/auth.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { AuthModule } from './auth/auth.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     AppRoutingModule,
     SharedModule, // To Display Header
     CoreModule, // for About, contact,
