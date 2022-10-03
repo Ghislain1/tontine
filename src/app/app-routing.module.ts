@@ -9,10 +9,6 @@ const routes: Routes = [
     loadChildren: () => import('./tontinard/tontinard.module').then(m => m.TontinardModule)
   },
   {
-    path: 'signin',
-    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
-  },
-  {
     path: 'home',
     loadChildren: () => import('./landing/landing.module').then(m => m.LandingModule)
   },
@@ -27,7 +23,6 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes,
     {
-      // relativeLinkResolution: 'legacy',
       enableTracing: true,    // <-- trace router
     })],
   exports: [RouterModule]
