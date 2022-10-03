@@ -31,4 +31,4 @@ const routes: Routes = [
   ],
   exports: [SignInComponent, SignUpComponent]
 })
-export class AuthModule { }
+export class AuthenticationModule { }
